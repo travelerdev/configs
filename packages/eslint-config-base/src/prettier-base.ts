@@ -1,0 +1,19 @@
+import type { Config } from "prettier";
+
+const config: Config = {
+  bracketSpacing: true,
+  htmlWhitespaceSensitivity: 'css',
+  insertPragma: false,
+  jsxSingleQuote: false,
+  printWidth: 100,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  requirePragma: false,
+  semi: true,
+  singleQuote: false,
+  tabWidth: 2,
+  trailingComma: 'none',
+  useTabs: false,
+  vueIndentScriptAndStyle: false,
+};
+export default config;

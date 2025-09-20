@@ -1,0 +1,24 @@
+{
+  "name": "@travelerdev/jest-config",
+  "version": "0.1.0",
+  "type": "module",
+  "author": "Traveler Dev Ltd (traveler.dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travelerdev/configs.git"
+  },
+  "homepage": "https://github.com/travelerdev/configs#readme",
+  "files": [
+    "browser/jest-preset.mjs",
+    "node/jest-preset.mjs"
+  ],
+  "dependencies": {
+    "jest": "^30.1.3",
+    "ts-jest": "^29.4.1"
+  },
+  "devDependencies": {
+    "@travelerdev/eslint-config-base": "workspace:*",
+    "jest-environment-jsdom": "^30.1.2",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@travelerdev/tsup-config",
+  "version": "0.1.0",
+  "author": "Traveler Dev Ltd (traveler.dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travelerdev/configs.git"
+  },
+  "homepage": "https://github.com/travelerdev/configs#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "lint": "eslint --max-warnings=0 \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix"
+  },
+  "devDependencies": {
+    "@travelerdev/eslint-config-base": "workspace:*",
+    "@travelerdev/typescript-config": "workspace:*",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "tsup": "^8.5.0"
+  }
+}
