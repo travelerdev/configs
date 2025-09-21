@@ -21,5 +21,5 @@ export default {
       declarationDir: "./dist/types"
     })
   ],
-  external: ["eslint"]
+  external: []
 };

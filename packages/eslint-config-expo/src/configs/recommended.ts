@@ -5,7 +5,6 @@ import { allExtensions } from "../utils/extensions";
 import core from "./core";
 import typescript from "./typescript";
 import reactConfig from "./react";
-import base from "@travelerdev/eslint-config-base/base";
 
 const commonRecs: Linter.Config[] = [
   {
@@ -41,12 +40,6 @@ const commonRecs: Linter.Config[] = [
   }
 ];
 
-export const recommendedJS: Linter.Config[] = [...core, ...base, ...reactConfig, ...commonRecs];
+export const recommendedJS: Linter.Config[] = [...core, ...reactConfig, ...commonRecs];
 
-export const recommended: Linter.Config[] = [
-  ...core,
-  ...base,
-  ...typescript,
-  ...reactConfig,
-  ...commonRecs
-];
+export const recommended: Linter.Config[] = [...core, ...typescript, ...reactConfig, ...commonRecs];

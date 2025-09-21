@@ -4,11 +4,9 @@ import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended"
 import reactPlugin from "eslint-plugin-react";
 import hooksPlugin from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
-import base from "@travelerdev/eslint-config-base/base";
 
 const config = defineConfig(
   ...tseslint.configs.recommended,
-  ...base,
   {
     ignores: [
       "next-env.d.ts",
