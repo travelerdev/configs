@@ -1,6 +1,6 @@
 {
   "name": "@travelerdev/eslint-config-base",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Traveler Dev Ltd (traveler.dev)",
   "repository": {
     "type": "git",
@@ -26,10 +26,10 @@
     "@typescript-eslint/parser": "^8.18.2",
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-turbo": "^2.5.6",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.30.0",
     "eslint-plugin-prettier": "^5.5.4",
+    "eslint-config-turbo": "^2.5.6",
     "prettier": "^3.6.2"
   },
   "devDependencies": {
