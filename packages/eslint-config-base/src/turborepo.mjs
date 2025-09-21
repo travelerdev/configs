@@ -1,10 +1,10 @@
-import recommended from "@travelerdev/eslint-config-base";
 import { defineConfig } from "eslint/config";
+import turboConfig from "eslint-config-turbo/flat";
 
 /** @type {import("eslint").Linter.Config} */
 export default defineConfig([
   {
-    ignores: ["packages/**"]
+    ignores: [".turbo/**"]
   },
-  ...recommended
+  ...turboConfig
 ]);

@@ -20,9 +20,7 @@ export function tsupConfig(optParam?: Partial<Options>) {
       const execAsync = promisify(exec);
 
       try {
-        await execAsync(
-          "tsc --emitDeclarationOnly --declaration --declarationMap"
-        );
+        await execAsync("tsc --emitDeclarationOnly --declaration --declarationMap");
       } catch (error) {
         console.error("TypeScript compilation failed:", error);
         throw error;

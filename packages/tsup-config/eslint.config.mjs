@@ -1,4 +1,4 @@
-import config from "@travelerdev/eslint-config-base/library.js";
+import recommended from "@travelerdev/eslint-config-base";
 
 /** @type {import("eslint").Linter.Config} */
-export default config;
+export default recommended;

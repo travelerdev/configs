@@ -1,11 +1,14 @@
+import { defineConfig } from "eslint/config";
 import pluginNext from "@next/eslint-plugin-next";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import reactPlugin from "eslint-plugin-react";
 import hooksPlugin from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
+import base from "@travelerdev/eslint-config-base/base";
 
-const config = tseslint.config(
+const config = defineConfig(
   ...tseslint.configs.recommended,
+  ...base,
   {
     ignores: [
       "next-env.d.ts",
@@ -45,7 +48,7 @@ const config = tseslint.config(
     rules: {
       ...reactPlugin.configs.recommended.rules,
       ...hooksPlugin.configs.recommended.rules,
-      ...(pluginNext.configs.recommended.rules as any),
+      ...pluginNext.configs.recommended.rules,
       "react/react-in-jsx-scope": "off"
     }
   },

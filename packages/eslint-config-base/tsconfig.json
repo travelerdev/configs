@@ -1,9 +1,0 @@
-{
-  "extends": "@travelerdev/typescript-config/ts-library.json",
-  "compilerOptions": {
-    "allowJs": true,
-    "baseUrl": "src",
-    "outDir": "dist"
-  },
-  "include": ["src"]
-}
