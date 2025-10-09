@@ -1,9 +1,6 @@
 {
   "name": "@travelerdev/eslint-config-nextjs",
-  "version": "0.1.0",
-  "files": [
-    "nextjs.mjs"
-  ],
+  "version": "0.2.0",
   "author": "Traveler Dev Ltd (traveler.dev)",
   "repository": {
     "type": "git",
@@ -11,6 +8,9 @@
   },
   "homepage": "https://github.com/travelerdev/configs#readme",
   "type": "module",
+  "exports": {
+    ".": "./src/recommended.mjs"
+  },
   "scripts": {
     "lint": "eslint --max-warnings=0 \"src/**/*.mjs\"",
     "lint:fix": "eslint \"src/**/*.mjs\" --fix"

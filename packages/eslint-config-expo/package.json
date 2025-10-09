@@ -1,6 +1,6 @@
 {
   "name": "@travelerdev/eslint-config-expo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The ESLint9 configuration that Expo forgot",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
