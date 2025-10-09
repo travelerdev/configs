@@ -1,5 +1,11 @@
 # @travelerdev/eslint-config-nextjs
 
+## 0.3.0
+
+### Minor Changes
+
+- Fix: Again, the wrong export causing issues.
+
 ## 0.2.0
 
 ### Minor Changes
